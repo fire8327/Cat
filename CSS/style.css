@@ -1,0 +1,243 @@
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rounded {
+    border-radius: 0.5rem !important;
+}
+
+.header-img{
+    background-image: url(../Assets/img/main.png);
+    width: 100%;
+    height: 504px;
+    display: flex;
+    align-items: center;
+}
+
+.f1, .f2 , .f3
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.f3
+{
+    width: 100%;
+    justify-content: space-around;
+    border-top:1px solid #EFEFEF ;
+    color: #8F8F8F;
+}
+.col-lg-3, .col-lg-2{
+    background-color: #FAC663;
+}
+.logo-ms{
+    margin-right: 20px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-dots-item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #E1E1E1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .slider-dots-item:hover {
+    background-color: #FAC663;
+}
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    align-items: center;
+    justify-content: center;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+.item img {
+    width: 50%;
+}
+.slideBlock {
+    width: 50%;
+    height: 275px;
+    border-radius: 8px;
+    margin-left: -70px;
+    padding: 2% 10% 2% 10%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+}
+.slideBlock h5 {
+    margin-top: 0.5rem;
+}
+.slideBlock ul {
+    list-style: none;
+    padding-left: 0;
+}
+.slideBlock ul span {
+    color: #FAC663;
+    font-size: 37px;
+    line-height: 30px;
+    vertical-align: bottom;
+    padding-right: 5px;
+}
+.slideBlock button {
+    width: 206px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    background: #FF7236;
+    box-shadow: 0px 5px 25px rgba(26, 33, 47, 0.1);
+    font-size: 16px;
+    color: #FFFEFD;
+    font-family: 'Lato-SemiBold';
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.round-paw {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: #FFFEFD;
+    background-image: url(../Assets/img/liitle-paw.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.slider-navigation button {
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.25);
+    border: 0;
+    border-radius: 50px;
+}
+.prev button {
+    background-image: url(../Assets/img/Previous.svg);
+    background-position: 45% 48%;
+    background-repeat: no-repeat;
+}
+.next button {
+    background-image: url(../Assets/img/Next.svg);
+    background-position: 50% 48%;
+    background-repeat: no-repeat;
+}
+
+.slider-buttons
+{
+    margin-right: -35%;
+    margin-left: 35%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+@media (max-width:768px)
+{
+    .f-1
+    {
+        width: 100%;
+    }
+    .a-f
+    {
+        width: 50%;
+    }
+    .p-f
+    {
+       width: 100%;
+       text-align: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .header-img{
+       background-image: url(../Assets/img/main-md.png);
+       height: 868px;
+       flex-direction: column;
+       padding-top: 10%;
+    }
+    .slider-buttons
+    {
+        margin:0;
+        display: none;
+    }
+    
+}
+
+.col-lg-7, .col-md-7
+{
+    padding: 0;
+}
+
+.sb
+{
+    border-radius: 25px;
+    padding-left: 25px; 
+    padding-top: 7px; 
+    height: 50px; 
+    font-weight: 600;
+}
+
+@media (max-width:320px){
+       .header-img{
+           background-image: url(../Assets/img/main-xs.png);
+           height: 457px;
+        }
+
+        .item
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   }
